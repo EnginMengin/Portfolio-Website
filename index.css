@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --primary-color: #343642;
+    --bg-color: #f0efef;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "poppins";
+    background-color: var(--bg-color);
+    color: var(--primary-color);
+}
+
+main {
+    margin: 50px 80px;
+}
+
+main .container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+
+.container .left {
+    height: auto;
+}
+
+
+
+.box {
+    margin: 30px;
+}
+
+.img-box {
+    width: 100%;
+}
+
+.img-box img {
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+    border-radius: 50px;
+}
+
+.wrapper {
+
+    display: grid;
+    grid-template-columns: 1.3fr 1fr;
+}
+
+.introduce h1 {
+    font-size: 80px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.introduce p {
+    font-size: 16px;
+    font-weight: 400;
+    margin-bottom: 26px;
+}
+
+
+.introduce p span {
+    font-weight: 600;
+}
+
+.introduce h5 {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.skills h1 {
+    font-size: 44px;
+    font-weight: 800;
+}
+
+.items {
+    width: 100%;
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr 0.5fr;
+    grid-row-gap: 10px;
+}
+
+.items .item {
+    width: 75px;
+    height: 75px;
+    background-color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+}
+
+.items .item i,
+.items .item p {
+    color: var(--bg-color);
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.education h1 {
+    font-size: 45px;
+    letter-spacing: -2px;
+}
+
+.education p {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.experience h1 {
+    font-size: 45px;
+
+}
+
+.experience p {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.experience h5 {
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+@media only screen and (max-width: 1300px) {
+
+    .wrapper {
+
+        grid-template-columns: 1fr;
+    }
+
+    main .container {
+        grid-template-columns: 1fr  1fr;
+
+    }
+}
+
+@media only screen and (max-width: 900px) {
+
+
+    main .container {
+        grid-template-columns: 1fr  ;
+    }
+    main {
+        margin: 50px 40px;
+    }
+}
